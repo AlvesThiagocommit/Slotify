@@ -30,9 +30,6 @@ if(isset($_POST['registerButton'])) {
     $password2 = sanitizeFormPassword($_POST['password2']);
 
     
-
-
-
 }
 
 
