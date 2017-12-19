@@ -19,26 +19,6 @@ function sanitizeFormString($inputText) {
 }
 
 
-function validateUsername($un) {
-    # code...
-}
-
-function validateFirstName($fn) {
-    # code...
-}
-
-function validateLastName($ln) {
-    # code...
-}
-
-function validateEmails($em, $em2) {
-    # code...
-}
-
-function validatePasswords($pw, $pw2) {
-    # code...
-}
-
 if(isset($_POST['registerButton'])) {
     //register was pressed
     $username = sanitizeFormUsername($_POST['username']);    
