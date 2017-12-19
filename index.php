@@ -7,6 +7,6 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    hello!1
+    HELLO
     </body>
 </html>
