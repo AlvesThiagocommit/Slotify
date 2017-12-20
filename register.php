@@ -3,7 +3,7 @@
 	include("includes/classes/Account.php");
 	include("includes/classes/Constants.php");
 
-	$account = new Account();
+	$account = new Account($db);
 	$db = Database::conexao();
 
 	include("includes/handlers/register-handler.php");
