@@ -20,9 +20,7 @@ class Database
         $db_usuario = "root";
         $db_senha = "";
         $db_driver = "mysql";
-        # Informações sobre o sistema:
-        $sistema_titulo = "Slotify";
-        $sistema_email = "lobo.alvesthiago@gmail.com";
+        
         try
         {
             # Atribui o objeto PDO à variável $db.
@@ -33,8 +31,7 @@ class Database
             self::$db->exec('SET NAMES utf8');
         }
         catch (PDOException $e)
-        {
-            # Envia um e-mail para o e-mail oficial do sistema, em caso de erro de conexão.
+        {            
             $e->getMessage();
             # Então não carrega nada mais da página.
             die("Connection Error: " . $e->getMessage());
